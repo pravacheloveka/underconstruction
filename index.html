@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Молодежь за права человека - обновление сайта</title>
+<link href="tools/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="tools/jquery.min.js"></script> 
+<script type="text/javascript" src="tools/cufon-yui.js"></script>
+<script type="text/javascript" src="tools/Abraham_Lincoln_400.font.js"></script>
+<script type="text/javascript" src="tools/discipuli-britannica.cufonfonts.js"></script>
+<script src="tools/museo-sans-cyrl-300.cufonfonts.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Cufon.replace('.logo h1', {fontFamily: 'Discipuli Britannica'});
+	Cufon.replace('.logo h2', {fontFamily: 'Museo Sans Cyrl 300'});
+	Cufon.replace('.logo h2 span', {fontFamily: 'Abraham Lincoln'});
+	Cufon.replace('p.big_text, p.small_text', {fontFamily: 'Museo Sans Cyrl 300'});
+	Cufon.replace('p.big_text strong, p.small_text strong', {fontFamily: 'Museo Sans Cyrl 300'});
+</script>
+
+<script type="text/javascript">
+    (function($,window){
+	$(document).ready(function(){
+	    if (window.location.hash == '#thanks') {
+    		$('#thanks').html("Спасибо!");
+    		$('#thanks2').html("");
+    		window.location.hash = '';
+    		setTimeout(function() {
+    		    window.location.reload(); 
+		    }, 5000);
+	    }
+	});
+    })(jQuery, this);
+</script>
+</head>
+<body>
+<div id="transy">
+</div>
+<div id="wrapper">
+	<div class="logo"><h1>Молодёжь</h1><h2><strong class="one"></strong>за права человека<strong class="two"></strong></h2></div>
+		<br/>
+		<center><iframe src="https://player.vimeo.com/video/123074817" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+	<div class="content">
+		<p class="big_text" id="thanks"><strong>Мы</strong> обновляем свой сайт!</p>
+		<p class="small_text" id="thanks2"><strong>Будьте на связи.</strong> Просто оставьте свой емайл.</p>
+		<div class="form">
+			<div class="field_content">
+		 		<form action="//formspree.io/pravacheloveka@re-coders.com" method="POST" class="email">
+					<input type="email" name="_replyto" class="field" />
+					<input type="hidden" name="_next" value="//pravacheloveka.info/#thanks" />
+					<input type="hidden" name="_subject" value="Pravacheloveka Maintanance" />
+					<input type="button" class="submit" onclick="return document.forms[0].submit();" />
+    			</form>
+			</div>
+		</div>
+		<p class="small_text" style="margin-top: 100px;"><a href="//vk.com/4humanrights" style="color: white; ">Группа ВКонтакте.</a> </p>
+	</div>
+</div>
+</body>
+</html>
